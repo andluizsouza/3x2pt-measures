@@ -1,0 +1,38 @@
+#file_name: /home/hcamacho/kgg-test.fit
+
+#file_name: /home/hcamacho/src_s1_z2_c1.fits
+
+file_name: /home/hcamacho/lens_s1_z1_c1.fits
+rand_file_name: /home/hcamacho/ran_c1.fits
+
+ra_col: 'RA'
+dec_col: 'DEC'
+ra_units: deg
+dec_units: deg
+
+#g1_col: 'GAMMA1'
+#g2_col: 'GAMMA2'
+#k_col: 'KAPPA'
+
+verbose: 2
+
+min_sep: 2.5
+max_sep: 250
+nbins: 20
+sep_units: arcmin
+#bin_slop: 1.0
+
+# The output filename for count-count correlation function
+nn_file_name: outputs/xi_nn1.dat
+
+# The output filename for count-shear correlation function
+# ng_file_name : outputs/xi_ng1.dat
+
+# The output filename for shear-shear correlation function
+# gg_file_name : outputs/xi_gg2.dat
+
+# The output filename for count-kappa correlation function
+# nk_file_name : outputs/xi_nk.dat
+
+# The output filename for kappa-kappa correlation function
+# kk_file_name : outputs/xi_kk.dat

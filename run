@@ -1,0 +1,2 @@
+nohup time condor_run mpirun -v --prefix /mnt/eups/packages/Linux64/openmpi/1.8.4+0 -x PYTHONPATH -x PATH -x LD_LIBRARY_PATH -x C_INCLUDE_PATH -oversubscribe -np 1 --cpus-per-proc 12 -machinefile machines python /home/anderson/3x2pt/measure.py &
+

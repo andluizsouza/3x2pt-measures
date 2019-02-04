@@ -1,0 +1,321 @@
+--------------------------------------------------------------------------
+The following command line options and corresponding MCA parameter have
+been deprecated and replaced as follows:
+
+  Command line options:
+    Deprecated:  --cpus-per-proc, -cpus-per-proc, --cpus-per-rank, -cpus-per-rank
+    Replacement: --map-by <obj>:PE=N, default <obj>=NUMA
+
+  Equivalent MCA parameter:
+    Deprecated:  rmaps_base_cpus_per_proc
+    Replacement: rmaps_base_mapping_policy=<obj>:PE=N, default <obj>=NUMA
+
+The deprecated forms *will* disappear in a future version of Open MPI.
+Please update to the new syntax.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  r1i0n0.ib0.smc.linea
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................/mnt/eups/packages/Linux64/python/2.7.3+2/lib/python2.7/site-packages/astropy-1.0.4-py2.7-linux-x86_64.egg/astropy/utils/introspection.py:143: UserWarning: Module pkg_resources was already imported from /mnt/eups/packages/Linux64/setuptools/0.6c9+1/lib/setuptools-0.6c9-py2.5.egg/pkg_resources.py, but /mnt/eups/packages/Linux64/python/2.7.3+2/lib/python2.7/site-packages/distribute-0.6.28-py2.7.egg is being added to sys.path
+  from pkg_resources import parse_version
+/mnt/eups/packages/Linux64/python/2.7.3+2/lib/python2.7/site-packages/astropy-1.0.4-py2.7-linux-x86_64.egg/astropy/utils/introspection.py:143: UserWarning: Module site was already imported from /mnt/eups/packages/Linux64/python/2.7.3+2/lib/python2.7/site.pyc, but /mnt/eups/packages/Linux64/python/2.7.3+2/lib/python2.7/site-packages/distribute-0.6.28-py2.7.egg is being added to sys.path
+  from pkg_resources import parse_version
+Reading input file /home/hcamacho/anderson/treecorr_run_test/src-cat_z1.fits
+   file_type assumed to be FITS from the file name.
+   nobj = 22842067
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+varg = 0.000006: sig_sn (per component) = 0.002469
+Starting process GG auto-correlations for cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z1.fits.
+Using 48 threads.
+Building GField from cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z1.fits
+Starting 1024 jobs.
+Writing GG correlations to /home/anderson/3x2pt/gg_data/gg_z11.dat
+file_type assumed to be ASCII from the file name.
+Reading input file /home/hcamacho/anderson/treecorr_run_test/src-cat_z2.fits
+   file_type assumed to be FITS from the file name.
+   nobj = 22842067
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+varg1 = 0.000006: sig_sn (per component) = 0.002469
+varg2 = 0.000017: sig_sn (per component) = 0.004142
+Starting process GG cross-correlations for cats /home/hcamacho/anderson/treecorr_run_test/src-cat_z1.fits, /home/hcamacho/anderson/treecorr_run_test/src-cat_z2.fits.
+Using 48 threads.
+Building GField from cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z2.fits
+Starting 1024 jobs.
+Writing GG correlations to /home/anderson/3x2pt/gg_data/gg_z12.dat
+file_type assumed to be ASCII from the file name.
+Reading input file /home/hcamacho/anderson/treecorr_run_test/src-cat_z3.fits
+   file_type assumed to be FITS from the file name.
+   nobj = 22842067
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+varg1 = 0.000006: sig_sn (per component) = 0.002469
+varg2 = 0.000037: sig_sn (per component) = 0.006093
+Starting process GG cross-correlations for cats /home/hcamacho/anderson/treecorr_run_test/src-cat_z1.fits, /home/hcamacho/anderson/treecorr_run_test/src-cat_z3.fits.
+Using 48 threads.
+Building GField from cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z3.fits
+Starting 1024 jobs.
+Writing GG correlations to /home/anderson/3x2pt/gg_data/gg_z13.dat
+file_type assumed to be ASCII from the file name.
+Reading input file /home/hcamacho/anderson/treecorr_run_test/src-cat_z4.fits
+   file_type assumed to be FITS from the file name.
+   nobj = 22842067
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+varg1 = 0.000006: sig_sn (per component) = 0.002469
+varg2 = 0.000065: sig_sn (per component) = 0.008080
+Starting process GG cross-correlations for cats /home/hcamacho/anderson/treecorr_run_test/src-cat_z1.fits, /home/hcamacho/anderson/treecorr_run_test/src-cat_z4.fits.
+Using 48 threads.
+Building GField from cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z4.fits
+Starting 1024 jobs.
+Writing GG correlations to /home/anderson/3x2pt/gg_data/gg_z14.dat
+file_type assumed to be ASCII from the file name.
+Reading input file /home/hcamacho/anderson/treecorr_run_test/src-cat_z5.fits
+   file_type assumed to be FITS from the file name.
+   nobj = 22842067
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+varg1 = 0.000006: sig_sn (per component) = 0.002469
+varg2 = 0.000102: sig_sn (per component) = 0.010097
+Starting process GG cross-correlations for cats /home/hcamacho/anderson/treecorr_run_test/src-cat_z1.fits, /home/hcamacho/anderson/treecorr_run_test/src-cat_z5.fits.
+Using 48 threads.
+Building GField from cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z5.fits
+Starting 1024 jobs.
+Writing GG correlations to /home/anderson/3x2pt/gg_data/gg_z15.dat
+file_type assumed to be ASCII from the file name.
+Reading input file /home/hcamacho/anderson/treecorr_run_test/src-cat_z2.fits
+   file_type assumed to be FITS from the file name.
+   nobj = 22842067
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+varg = 0.000017: sig_sn (per component) = 0.004142
+Starting process GG auto-correlations for cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z2.fits.
+Using 48 threads.
+Building GField from cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z2.fits
+Starting 1024 jobs.
+Writing GG correlations to /home/anderson/3x2pt/gg_data/gg_z22.dat
+file_type assumed to be ASCII from the file name.
+Reading input file /home/hcamacho/anderson/treecorr_run_test/src-cat_z3.fits
+   file_type assumed to be FITS from the file name.
+   nobj = 22842067
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+varg1 = 0.000017: sig_sn (per component) = 0.004142
+varg2 = 0.000037: sig_sn (per component) = 0.006093
+Starting process GG cross-correlations for cats /home/hcamacho/anderson/treecorr_run_test/src-cat_z2.fits, /home/hcamacho/anderson/treecorr_run_test/src-cat_z3.fits.
+Using 48 threads.
+Building GField from cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z3.fits
+Starting 1024 jobs.
+Writing GG correlations to /home/anderson/3x2pt/gg_data/gg_z23.dat
+file_type assumed to be ASCII from the file name.
+Reading input file /home/hcamacho/anderson/treecorr_run_test/src-cat_z4.fits
+   file_type assumed to be FITS from the file name.
+   nobj = 22842067
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+varg1 = 0.000017: sig_sn (per component) = 0.004142
+varg2 = 0.000065: sig_sn (per component) = 0.008080
+Starting process GG cross-correlations for cats /home/hcamacho/anderson/treecorr_run_test/src-cat_z2.fits, /home/hcamacho/anderson/treecorr_run_test/src-cat_z4.fits.
+Using 48 threads.
+Building GField from cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z4.fits
+Starting 1024 jobs.
+Writing GG correlations to /home/anderson/3x2pt/gg_data/gg_z24.dat
+file_type assumed to be ASCII from the file name.
+Reading input file /home/hcamacho/anderson/treecorr_run_test/src-cat_z5.fits
+   file_type assumed to be FITS from the file name.
+   nobj = 22842067
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+varg1 = 0.000017: sig_sn (per component) = 0.004142
+varg2 = 0.000102: sig_sn (per component) = 0.010097
+Starting process GG cross-correlations for cats /home/hcamacho/anderson/treecorr_run_test/src-cat_z2.fits, /home/hcamacho/anderson/treecorr_run_test/src-cat_z5.fits.
+Using 48 threads.
+Building GField from cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z5.fits
+Starting 1024 jobs.
+Writing GG correlations to /home/anderson/3x2pt/gg_data/gg_z25.dat
+file_type assumed to be ASCII from the file name.
+Reading input file /home/hcamacho/anderson/treecorr_run_test/src-cat_z3.fits
+   file_type assumed to be FITS from the file name.
+   nobj = 22842067
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+varg = 0.000037: sig_sn (per component) = 0.006093
+Starting process GG auto-correlations for cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z3.fits.
+Using 48 threads.
+Building GField from cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z3.fits
+Starting 1024 jobs.
+Writing GG correlations to /home/anderson/3x2pt/gg_data/gg_z33.dat
+file_type assumed to be ASCII from the file name.
+Reading input file /home/hcamacho/anderson/treecorr_run_test/src-cat_z4.fits
+   file_type assumed to be FITS from the file name.
+   nobj = 22842067
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+varg1 = 0.000037: sig_sn (per component) = 0.006093
+varg2 = 0.000065: sig_sn (per component) = 0.008080
+Starting process GG cross-correlations for cats /home/hcamacho/anderson/treecorr_run_test/src-cat_z3.fits, /home/hcamacho/anderson/treecorr_run_test/src-cat_z4.fits.
+Using 48 threads.
+Building GField from cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z4.fits
+Starting 1024 jobs.
+Writing GG correlations to /home/anderson/3x2pt/gg_data/gg_z34.dat
+file_type assumed to be ASCII from the file name.
+Reading input file /home/hcamacho/anderson/treecorr_run_test/src-cat_z5.fits
+   file_type assumed to be FITS from the file name.
+   nobj = 22842067
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+varg1 = 0.000037: sig_sn (per component) = 0.006093
+varg2 = 0.000102: sig_sn (per component) = 0.010097
+Starting process GG cross-correlations for cats /home/hcamacho/anderson/treecorr_run_test/src-cat_z3.fits, /home/hcamacho/anderson/treecorr_run_test/src-cat_z5.fits.
+Using 48 threads.
+Building GField from cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z5.fits
+Starting 1024 jobs.
+Writing GG correlations to /home/anderson/3x2pt/gg_data/gg_z35.dat
+file_type assumed to be ASCII from the file name.
+Reading input file /home/hcamacho/anderson/treecorr_run_test/src-cat_z4.fits
+   file_type assumed to be FITS from the file name.
+   nobj = 22842067
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+varg = 0.000065: sig_sn (per component) = 0.008080
+Starting process GG auto-correlations for cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z4.fits.
+Using 48 threads.
+Building GField from cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z4.fits
+Starting 1024 jobs.
+Writing GG correlations to /home/anderson/3x2pt/gg_data/gg_z44.dat
+file_type assumed to be ASCII from the file name.
+Reading input file /home/hcamacho/anderson/treecorr_run_test/src-cat_z5.fits
+   file_type assumed to be FITS from the file name.
+   nobj = 22842067
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+varg1 = 0.000065: sig_sn (per component) = 0.008080
+varg2 = 0.000102: sig_sn (per component) = 0.010097
+Starting process GG cross-correlations for cats /home/hcamacho/anderson/treecorr_run_test/src-cat_z4.fits, /home/hcamacho/anderson/treecorr_run_test/src-cat_z5.fits.
+Using 48 threads.
+Building GField from cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z5.fits
+Starting 1024 jobs.
+Writing GG correlations to /home/anderson/3x2pt/gg_data/gg_z45.dat
+file_type assumed to be ASCII from the file name.
+Reading input file /home/hcamacho/anderson/treecorr_run_test/src-cat_z5.fits
+   file_type assumed to be FITS from the file name.
+   nobj = 22842067
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+varg = 0.000102: sig_sn (per component) = 0.010097
+Starting process GG auto-correlations for cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z5.fits.
+Using 48 threads.
+Building GField from cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z5.fits
+Starting 1024 jobs.
+Writing GG correlations to /home/anderson/3x2pt/gg_data/gg_z55.dat
+file_type assumed to be ASCII from the file name.
+................................................................................................................................................................................................................................................................................................................
+0.03user 0.03system 28:35.23elapsed 0%CPU (0avgtext+0avgdata 7740maxresident)k
+64inputs+72outputs (0major+3411minor)pagefaults 0swaps
+/mnt/eups/packages/Linux64/python/2.7.3+2/lib/python2.7/site-packages/astropy-1.0.4-py2.7-linux-x86_64.egg/astropy/utils/introspection.py:143: UserWarning: Module pkg_resources was already imported from /mnt/eups/packages/Linux64/setuptools/0.6c9+1/lib/setuptools-0.6c9-py2.5.egg/pkg_resources.py, but /mnt/eups/packages/Linux64/python/2.7.3+2/lib/python2.7/site-packages/distribute-0.6.28-py2.7.egg is being added to sys.path
+  from pkg_resources import parse_version
+/mnt/eups/packages/Linux64/python/2.7.3+2/lib/python2.7/site-packages/astropy-1.0.4-py2.7-linux-x86_64.egg/astropy/utils/introspection.py:143: UserWarning: Module site was already imported from /mnt/eups/packages/Linux64/python/2.7.3+2/lib/python2.7/site.pyc, but /mnt/eups/packages/Linux64/python/2.7.3+2/lib/python2.7/site-packages/distribute-0.6.28-py2.7.egg is being added to sys.path
+  from pkg_resources import parse_version
+Reading input file /home/hcamacho/anderson/treecorr_run_test/ran-cat.fits
+   file_type assumed to be FITS from the file name.
+Warning: skipping g1_col, g2_col for /home/hcamacho/anderson/treecorr_run_test/ran-cat.fits, num=0
+because they are invalid, but unneeded.
+Warning: skipping k_col for /home/hcamacho/anderson/treecorr_run_test/ran-cat.fits, num=0
+because it is invalid, but unneeded.
+   nobj = 340360377
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+Starting process NN auto-correlations for cat /home/hcamacho/anderson/treecorr_run_test/ran-cat.fits.
+Using 48 threads.
+Building NField from cat /home/hcamacho/anderson/treecorr_run_test/ran-cat.fits
+Starting 1024 jobs.
+Reading input file /home/hcamacho/anderson/treecorr_run_test/lens-cat_z1.fits
+   file_type assumed to be FITS from the file name.
+Warning: skipping g1_col, g2_col for /home/hcamacho/anderson/treecorr_run_test/lens-cat_z1.fits, num=0
+because they are invalid, but unneeded.
+Warning: skipping k_col for /home/hcamacho/anderson/treecorr_run_test/lens-cat_z1.fits, num=0
+because it is invalid, but unneeded.
+   nobj = 382686
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+Starting process NN auto-correlations for cat /home/hcamacho/anderson/treecorr_run_test/lens-cat_z1.fits.
+Using 48 threads.
+Building NField from cat /home/hcamacho/anderson/treecorr_run_test/lens-cat_z1.fits
+Starting 1024 jobs.
+Starting process NN cross-correlations for cats /home/hcamacho/anderson/treecorr_run_test/lens-cat_z1.fits, /home/hcamacho/anderson/treecorr_run_test/ran-cat.fits.
+Using 48 threads.
+Starting 1024 jobs.
+Writing NN correlations to /home/anderson/3x2pt/nn_data/nn_z11.dat
+file_type assumed to be ASCII from the file name.
+Reading input file /home/hcamacho/anderson/treecorr_run_test/src-cat_z1.fits
+   file_type assumed to be FITS from the file name.
+   nobj = 22842067
+Reading input file /home/hcamacho/anderson/treecorr_run_test/lens-cat_z1.fits
+   file_type assumed to be FITS from the file name.
+Warning: skipping g1_col, g2_col for /home/hcamacho/anderson/treecorr_run_test/lens-cat_z1.fits, num=0
+because they are invalid, but unneeded.
+Warning: skipping k_col for /home/hcamacho/anderson/treecorr_run_test/lens-cat_z1.fits, num=0
+because it is invalid, but unneeded.
+   nobj = 382686
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+varg = 0.000006: sig_sn (per component) = 0.002469
+Starting process NG cross-correlations for cats /home/hcamacho/anderson/treecorr_run_test/lens-cat_z1.fits, /home/hcamacho/anderson/treecorr_run_test/src-cat_z1.fits.
+Using 48 threads.
+Building NField from cat /home/hcamacho/anderson/treecorr_run_test/lens-cat_z1.fits
+Building GField from cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z1.fits
+Starting 1024 jobs.
+Writing NG correlations to /home/anderson/3x2pt/ng_data/ng_z11.dat
+file_type assumed to be ASCII from the file name.
+Reading input file /home/hcamacho/anderson/treecorr_run_test/src-cat_z1.fits
+   file_type assumed to be FITS from the file name.
+   nobj = 22842067
+nbins = 20, min,max sep = 2.5..250 arcmin, bin_size = 0.230259
+varg = 0.000006: sig_sn (per component) = 0.002469
+Starting process GG auto-correlations for cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z1.fits.
+Using 48 threads.
+Building GField from cat /home/hcamacho/anderson/treecorr_run_test/src-cat_z1.fits
+Starting 1024 jobs.
+Writing GG correlations to /home/anderson/3x2pt/gg_data/gg_z11.dat
+file_type assumed to be ASCII from the file name.
+--------------------------------------------------------------------------
+The following command line options and corresponding MCA parameter have
+been deprecated and replaced as follows:
+
+  Command line options:
+    Deprecated:  --cpus-per-proc, -cpus-per-proc, --cpus-per-rank, -cpus-per-rank
+    Replacement: --map-by <obj>:PE=N, default <obj>=NUMA
+
+  Equivalent MCA parameter:
+    Deprecated:  rmaps_base_cpus_per_proc
+    Replacement: rmaps_base_mapping_policy=<obj>:PE=N, default <obj>=NUMA
+
+The deprecated forms *will* disappear in a future version of Open MPI.
+Please update to the new syntax.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  r1i0n0.ib0.smc.linea
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+0.03user 0.03system 21:55.22elapsed 0%CPU (0avgtext+0avgdata 7740maxresident)k
+96inputs+48outputs (1major+3406minor)pagefaults 0swaps

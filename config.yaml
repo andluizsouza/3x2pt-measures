@@ -1,0 +1,16 @@
+ra_col: RA
+dec_col: DEC
+ra_units: deg
+dec_units: deg
+
+g1_col: GAMMA1
+g2_col: GAMMA2
+k_col: KAPPA
+
+min_sep: 2.5
+max_sep: 250.
+nbins: 20
+sep_units: arcmin
+#bin_slop: 1.0
+
+verbose: 2
